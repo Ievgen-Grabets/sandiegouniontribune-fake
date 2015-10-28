@@ -16,4 +16,14 @@ router.get('/video-example-snippet-solution', function(req, res, next) {
   res.render('snippet-solution.ejs');
 });
 
+/* GET video example page with snippet. */
+router.get('/index-with-snippet-solution', function(req, res, next) {
+  res.render('index-with-snippet-solution.ejs');
+});
+
+/* GET video example page with snippet. */
+router.get('/index-with-async-video', function(req, res, next) {
+  res.render('index-with-async-video.ejs');
+});
+
 module.exports = router;
