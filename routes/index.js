@@ -27,7 +27,7 @@ router.get('/index-with-async-video', function(req, res, next) {
 });
 
 /* GET original index */
-router.get('/index-with-original-player', function(req, res, next) {
+router.get('/index-original', function(req, res, next) {
   res.render('index-original');
 });
 
