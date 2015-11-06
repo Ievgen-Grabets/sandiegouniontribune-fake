@@ -28,7 +28,7 @@ router.get('/index-with-async-video', function(req, res, next) {
 
 /* GET original index */
 router.get('/index-with-original-player', function(req, res, next) {
-  res.render('index');
+  res.render('index-original');
 });
 
 /* GET original vied page index */
@@ -36,5 +36,19 @@ router.get('/video-page-with-original-player', function(req, res, next) {
   res.render('video-example-origin');
 });
 
+/* GET with snippet page index */
+router.get('/index-with-spinner-video', function(req, res, next) {
+  res.render('index-with-spinner-video');
+});
+
+/* GET with snippet page index */
+router.get('/index-with-snippet-spinner-solution', function(req, res, next) {
+  res.render('index-with-snippet-spinner-solution');
+});
+
+/* GET with snippet page index */
+router.get('/snippet-spinner-solution', function(req, res, next) {
+  res.render('snippet-spinner-solution.ejs');
+});
 
 module.exports = router;

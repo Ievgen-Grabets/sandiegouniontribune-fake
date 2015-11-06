@@ -849,13 +849,7 @@
                     <div class="pane bg-texture grey-light pane-1 clearfix">
                         <div class="span9 left">
                             <div>
-                                <script async src="//fierce-oasis-9623.herokuapp.com/dist/_adaptivem.js" data-player
-                                        data-placement="d2izf3rw-CJibJIO"
-                                        data-width="920"
-                                        data-height="520"
-                                        data-auto-play="true"
-                                        data-ads="null">
-                                </script>
+                                <script id="player-adaptivem"></script>
                             </div>
                             <div class="info clearfix">
                                 <div class="span10 col"><h3>Test Player Title</h3>
@@ -2550,5 +2544,22 @@ Hundreds gather for christening of Cabrillo flagship replica."><h4>San Salvador 
                     src="http://www.i.matheranalytics.com/i?e=pv&aid=v1&cid=ma89701&mrk=197837612&p=web&tv=no-js-0.1.0&tid=2015-10-28T02:38:41.458323"
                     style="display:none" height="1" width="1" alt/></noscript>
     </div>
+    <script>
+        window.onload = function () {
+            (function (d, id) {
+                var js, fjs = d.getElementById(id);
+                js = d.createElement('script');
+                js.id = "player-adaptivem";
+                js.setAttribute('data-player',"");
+                js.setAttribute('data-placement', "d2izf3rw-CJibJIO");
+                js.src = '//fierce-oasis-9623.herokuapp.com/dist/_adaptivem.js';
+                js.setAttribute('data-ads', "null");
+                js.setAttribute('data-width', "920");
+                js.setAttribute('data-height', "520");
+                js.setAttribute('data-auto-play', "true");
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'player-adaptivem'));
+        };
+    </script>
 </body>
 </html>
