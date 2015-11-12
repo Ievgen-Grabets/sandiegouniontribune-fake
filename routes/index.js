@@ -51,4 +51,18 @@ router.get('/snippet-spinner-solution', function(req, res, next) {
   res.render('snippet-spinner-solution.ejs');
 });
 
+// test ADS parsing
+
+router.get('/test-with-no-ads', function(req, res, next) {
+  res.render('test-with-no-ads');
+});
+
+router.get('/test-with-overriden-vast', function(req, res, next) {
+  res.render('test-with-overriden-vast');
+});
+
+router.get('/test-with-own-ads', function(req, res, next) {
+  res.render('test-with-own-ads');
+});
+
 module.exports = router;
