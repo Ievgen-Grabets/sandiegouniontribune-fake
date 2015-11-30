@@ -125,4 +125,10 @@ router.get('/adblock-action-ask-for-turn-off', function(req, res, next) {
   res.render('work_fine_2');
 });
 
+router.get('/adblock-fool-by-proximate', function(req, res, next) {
+  res.render('work_fine_3');
+});
+
+
+
 module.exports = router;
