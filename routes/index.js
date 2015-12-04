@@ -133,4 +133,8 @@ router.get('/adblock-action-ask-for-turn-off-and-stop-if-negative', function(req
   res.render('work_fine_4_test');
 });
 
+router.get('/adblock-fool-by-include-vast-file', function(req, res, next) {
+  res.render('work_fine_5_vast_include');
+});
+
 module.exports = router;
