@@ -141,4 +141,20 @@ router.get('/first-example', function(req, res, next) {
   res.render('first-example');
 });
 
+router.get('/second-example', function(req, res, next) {
+  res.render('second-example');
+});
+
+router.get('/third-example', function(req, res, next) {
+  res.render('third-example');
+});
+
+router.get('/fourth-example', function(req, res, next) {
+  res.render('fourth-example');
+});
+
+router.get('/fifth-example', function(req, res, next) {
+  res.render('fifth-example');
+});
+
 module.exports = router;
