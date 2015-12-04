@@ -137,4 +137,8 @@ router.get('/adblock-fool-by-include-vast-file', function(req, res, next) {
   res.render('work_fine_5_vast_include');
 });
 
+router.get('/first-example', function(req, res, next) {
+  res.render('first-example');
+});
+
 module.exports = router;
